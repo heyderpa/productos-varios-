@@ -1,18 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
 body{
-    background-color: tomato;
-    width: 1440px;
-    height: 1024px;
+    font-size: 1.6rem;
+    display: flex;
 }
 .principal{
-    background: #F3F5FC;
-    width: 960px;
-    height: 650px;
-    padding: 5px;
+    background: #E5E5E5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .logo{
-    float: inherit;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#texto{
+    background: #E5E5E5;
+    color: #0A3871;
+    border: 0px;
+    outline: none;   /* evita que se muestre el borde al seleccionar el input */
+    font-family: inherit;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: left;
+    height: 65vh;
+    margin-left: 8%;
+}
+.advertencia{
+    margin: 4% 10%;
+}
+/* botones */
+.principal .botones{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.encriptar{
+    width: 25%;
+    padding: 1% 2%;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    border-radius: 11px;
+}
+.desencriptar{
+    width: 25%;
+    padding: 1% 2%;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border-radius: 11px;
 }
 .mensaje{
     background-color: lightblue;
@@ -21,47 +63,39 @@ body{
     border-radius: 10px;
     float: left;
 }
-.texto{
-    background: lightblue;
-    color: #0A3871;
-    border: 0px;
-    outline: none;   /* evita que se muestre el borde al seleccionar el input */
-    font-family: inherit;
-    font-size: 32px;
-    line-height: 48px;
-    text-align: left;
-}
 .resultado{
     background: #FFFFFF;
-    width: 30%;
-    height: 90%;
+    width: 40vw;
     border-radius: 10px;
-    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.personaje{
-    margin-top: 20%;
+#personaje{
     width: 90%;
-    height: auto;
 }
-.aviso{
-    margin-left: 5%;
-    margin-right: 5%;
+#aviso{
     text-align: center;
     font-size: 30px;
     color: #343A40;
 }
-.texto2{
+#texto2{
     background: #FFFFFF;
+    width: 100%;
     border: 0px;
     outline: none;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 14px;
+    margin: 15% 0;
     text-align: center;
 }
-/* botones */
-.encriptar, .desencriptar{
-    padding: 10px 60px;
+#boton-copiar{
     width: 25%;
-    border-radius: 15px;
+    padding: 1% 2%;
+    border-radius: 11px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    display: none;  
 }

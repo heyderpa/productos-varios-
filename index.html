@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index-style.css">
+    <script src="index-script.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
-   <div class="principal">
-        <div class="mensaje">
-            <img class="logo" src="/image/Vector.png" alt="">
-            <input class="texto" type="text" placeholder="Ingrese el texto aqui">
-        </div>
-        <div class="resultado">
-            <img class="personaje" src="image/Personaje.png" alt="">
-            <p class="aviso">Ningún mensaje fue encontrado</p>
-            <textarea class="texto2" name="" id="" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
-        </div>
+    <div class="principal">
+        <figure>
+            <img class="logo" src="/image/Vector.png" alt="Logo alura">
+        </figure>
+        <input id="texto" type="text" placeholder="Ingrese el texto aqui">
+        <p class="advertencia"> <img src="image/Vector2.png" alt="logo advertencia"> Solo letras minúsculas y sin acentos</p>
         <div class="botones">
-            <img src="image/Vector2.png" alt="">
-            <p>Solo letras minúsculas y sin acentos</p>
-            <button type="submit" class="encriptar">Encriptar</button>
-            <button type="submit" class="desencriptar">Desencriptar</button>
+            <button type="button" class="encriptar" onclick="encripta()">Encriptar</button>
+            <button type="button" class="desencriptar" onclick="desencripta()">Desencriptar</button>
         </div>
-   </div>
+    </div>
+    <div class="resultado">
+        <img id="personaje" src="image/Personaje.png" alt="">
+            <p id="aviso">Ningún mensaje fue encontrado</p>
+            <textarea name="" id="texto2" cols="30" rows="10" placeholder="Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            <button type="button" id="boton-copiar" onclick="copiar()">Copiar</button>
+    </div>
 </body>
 </html>
